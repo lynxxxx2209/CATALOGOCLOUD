@@ -8,7 +8,7 @@ Sin grupos, cada servidor tendría que definir inline los elementos de hardware 
 
 ## Error de VS Code con IDs duplicados
 
-Si intentáis poner dos servidores con el mismo ID, VS Code mostrará el siguiente error de validación:
+Si intentamos poner dos servidores con el mismo ID, VS Code mostrará el siguiente error de validación:
 
 ```
 Duplicate unique value [srv-web-01] declared for identity constraint "UnicoID" of element "catalogo_cloud".
