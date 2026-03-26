@@ -7,7 +7,9 @@
   Archivo: CatalogoCloud_v2.xml (Versión refactorizada)
   ========================================================
 -->
-<catalogo_cloud empresa="TechNova Cloud">
+<catalogo_cloud xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+                xsi:noNamespaceSchemaLocation="CatalogoCloud_v2.xsd" 
+                empresa="TechNova Cloud">
 
     <!-- Data Center: Región Sur (Madrid) -->
     <centro_datos ubicacion="Madrid" zona="eu-sur-1">

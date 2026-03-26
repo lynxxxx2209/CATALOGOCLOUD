@@ -36,6 +36,12 @@
         </xs:restriction>
     </xs:simpleType>
 
+    <xs:simpleType name="TipoIP">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)" />
+        </xs:restriction>
+    </xs:simpleType>
+
     <xs:simpleType name="TipoEstado">
         <xs:restriction base="xs:string">
             <xs:pattern value="activo|mantenimiento|apagado" />
@@ -162,7 +168,7 @@
                                         <xs:element name="red">
                                             <xs:complexType>
                                                 <xs:choice>
-                                                    <xs:element name="ip_fija" type="xs:string" />
+                                                    <xs:element name="ip_fija" type="TipoIP" />
                                                     <xs:element name="dhcp">
                                                         <xs:simpleType>
                                                             <xs:restriction base="xs:string">
